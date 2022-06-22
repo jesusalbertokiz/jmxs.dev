@@ -290,7 +290,7 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: 65%;
 }
@@ -690,7 +690,11 @@ footer.footer .move-up span:hover{
     }
 
     main .blog{
-        height: 100vh;
+        height: 75vh;
+    }
+
+    main .blog .blog-post {
+        padding-top: 4.5rem;
     }
 
     .site-content .post-content > .post-image .post-info{
