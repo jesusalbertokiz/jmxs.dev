@@ -183,6 +183,7 @@ main .site-title{
     height: 80vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 main .site-title .site-background{
@@ -191,9 +192,7 @@ main .site-title .site-background{
     color: var(--white);
 }
 
-main .site-title h1, h3{
-    margin: .3rem;
-}
+
 
 main .site-title .title-gradient{
     height: 320px;
@@ -352,17 +351,17 @@ main .site-content .post-content > .post-image, .post-title{
     position: relative;
 }
 
-main .site-content .post-content > .post-image .post-info{
+main .site-content .post-content > .post-image .post-inf{
     background: var(--sky);
     padding: .5rem;
     position: absolute;
     bottom: 0%;
-    left: 13vw;
     border-radius: 3rem;
     color: #ffff;
 }
 
 main .site-content .post-content > .post-image > div{
+    display: flex;
     overflow: hidden;
 }
 
