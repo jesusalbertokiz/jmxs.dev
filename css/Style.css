@@ -358,8 +358,8 @@ main .post-content .post-title a{
     0 -1px 5px #334bfb;
 }
 
-.site-content > .sidebar .category-list .list-items a{
-    color:  black;
+.site-content > .sidebar .category-list .list-items a, .site-content > .sidebar .category-list .list-items span{
+    color:  rgb(255, 255, 255);
 }
 
 .site-content .sidebar .popular-post .post-content{
