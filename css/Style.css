@@ -6,7 +6,13 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Anton', sans-serif;
+
+
 }
+
+
 
 :root{
 
@@ -15,17 +21,14 @@ html, body{
     --text-light : #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
+    --midnight: #208ada;
 
     /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --sky: linear-gradient(90deg, #2c41da 0%, rgba(32,138,218,1) 100%);
 
     /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Livvic : 'Livvic', cursive;
+    --Abel: 'Abel', sans-serif;
+    --Anton: 'Anton', sans-serif;
 }
 
 
@@ -47,17 +50,18 @@ ul{
 }
 
 h1{
-    font-family: var(--Lexend);
-    font-size: 2.5rem;
+    font-family: var(--Anton);
+    font-size: 2.3rem;
+    font-weight: 300;
 }
 
 h2{
-    font-family: var(--Lexend);
+    font-family: var(--Anton);
 }
 
 h3{
     font-family: var(--Abel);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 button.btn{
@@ -65,12 +69,14 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: var(--Livvic);
+    font-family: var(--Abel);
     cursor: pointer;
+    color: white;
 }
 
 span{
     font-family: var(--Abel);
+    font-weight: 200;
 }
 
 .container{
@@ -82,7 +88,7 @@ span{
 }
 
 p{
-    font-family: var(--Lexend);
+    font-family: var(--Anton);
     color: var(--text-light);
 }
 
@@ -151,7 +157,7 @@ p{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Lexend);
+    font-family: var(--Anton);
     font-size: 1.6rem;
 }
 
@@ -174,9 +180,9 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/Background-image.png');
+    background: black;
     background-size: cover;
-    height: 110vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -207,9 +213,6 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    background: url('../assets/Abract01.png');
-    background-repeat: no-repeat;
-    background-position: right;
     height: 100vh;
     width: 100%;
     background-size: 65%;
@@ -225,7 +228,16 @@ main .blog-post .blog-content{
     text-align: center;
     width: 80%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 20px 20px #ebebeb,
+    0 -20px 20px #e5e5e5;
+    background-color: #ffff;
+    
+}
+
+
+main .blog-content img{
+border-radius: 30px 30px 0 0;
 }
 
 main .blog-content .blog-title{
@@ -242,28 +254,8 @@ main .blog-content span{
     display: block;
 }
 
-section .container .owl-nav{
-    position: absolute;
-    top: 0%;
-    margin: 0 auto;
-    width: 100%;
-}
 
-.owl-nav .owl-prev .owl-nav-prev,
-.owl-nav .owl-next .owl-nav-next{
-    color: var(--text-gray);
-    background: transparent;
-    font-size: 2rem;
-}
 
-.owl-theme .owl-nav [class*='owl-']:hover{
-    background: transparent;
-    color: var(--midnight);
-}
-
-.owl-theme .owl-nav [class*='owl-']{
-    outline: none;
-}
 
 
 /* -------x------- Blog Carousel -----x------ */
@@ -332,7 +324,7 @@ main .post-content .post-title a{
     padding: .6rem .9rem;
     border-radius: 2rem;
     margin: 0 .3rem;
-    font-family: var(--Lexend);
+    font-family: var(--Anton);
 }
 
 .site-content .pagination .pages{
@@ -346,7 +338,7 @@ main .post-content .post-title a{
 /* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
-    font-family: var(--Livvic);   
+    font-family: var(--Abel);   
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -395,7 +387,7 @@ main .post-content .post-title a{
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
-    font-family: var(--Lexend);
+    font-family: var(--Anton);
     font-size: 1rem;
 }
 
@@ -456,7 +448,7 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Josefin);
+    font-family: var(--Abel);
     font-size: 1rem;
     width: 74%;
 }
@@ -481,7 +473,7 @@ footer.footer .follow div i{
 
 footer.footer .rights{
     justify-content: center;
-    font-family: var(--Josefin);
+    font-family: var(--Abel);
 }
 
 footer.footer .rights h4 a{
