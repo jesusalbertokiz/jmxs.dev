@@ -436,9 +436,6 @@ main .post-content .post-title a{
     color:  rgb(255, 255, 255);
 }
 
-.site-content .sidebar .popular-post .post-content{
-    padding: 1rem 0;
-}
 
 .site-content .sidebar .popular-post h2{
     padding-top: 8rem;
@@ -457,7 +454,7 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter{
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
 
 .site-content .sidebar .newsletter .form-element{
@@ -481,7 +478,7 @@ main .post-content .post-title a{
 
 .site-content .sidebar .popular-tags{
     color: #ffffff;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .site-content .sidebar .popular-tags .tags .tag{
@@ -699,6 +696,10 @@ footer.footer .move-up span:hover{
 
     .site-content .post-content > .post-image .post-info{
         display: none;
+    }
+
+    .site-content .sidebar .popular-post h2 {
+        padding-top: 2.5rem;
     }
 
     footer.footer .container > div{
