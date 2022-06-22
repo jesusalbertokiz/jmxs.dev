@@ -7,7 +7,7 @@ html, body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Abel', sans-serif;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 
 }
@@ -88,8 +88,10 @@ span{
 }
 
 p{
-    font-family: var(--Anton);
+    font-family: var(--Abel);
     color: var(--text-light);
+    font-weight: 50;
+    font-size: 1rem;
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -306,6 +308,7 @@ main .site-content .post-content > .post-image .post-info span{
 main .post-content .post-title a{
     font-family: var(--Anton);
     font-size: 1.5rem;
+    font-weight: 200;
 }
 
 .site-content .post-content .post-title .post-btn{
