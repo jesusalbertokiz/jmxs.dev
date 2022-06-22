@@ -26,6 +26,11 @@
 /*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
+
+    .title-gradient span, .title-gradient span::before{
+        font-size: 5rem;
+    }
+
     main .blog{
         height: 100vh;
     }

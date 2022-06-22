@@ -1,3 +1,4 @@
+@import url('./responsive.css');
 
 *{
     margin: 0;
@@ -206,7 +207,7 @@ main .site-title .title-gradient{
 
 .title-gradient span{
     font-family: var(--Anton);
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: 7px;
     font-weight: 600;
     display: block;
@@ -221,7 +222,7 @@ main .site-title .title-gradient{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
-    font-size: 5rem;
+    font-size: 6rem;
     position: absolute;
     inset: 0;
     content: var(--content);
@@ -655,3 +656,58 @@ footer.footer .move-up span:hover{
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+
+    .title-gradient span, .title-gradient span::before{
+        font-size: 4rem;
+    }
+
+    main .blog{
+        height: 100vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80%;
+    }
+
+}
