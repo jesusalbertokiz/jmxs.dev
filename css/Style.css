@@ -434,7 +434,9 @@ footer.footer{
 footer.footer .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    
 }
+
 
 footer.footer .container > div{
     flex-grow: 1;
@@ -442,7 +444,7 @@ footer.footer .container > div{
     padding: 3rem .9rem;
 }
 
-footer.footer .container h2{
+footer.footer .container h2 , footer.footer .container p{
     color: var(--white);
     font-weight: 200;
 }
