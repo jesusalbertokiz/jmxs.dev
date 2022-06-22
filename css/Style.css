@@ -84,7 +84,7 @@ span{
 }
 
 .text-gray{
-    color: var(--text-gray);
+    color: var(--white);
 }
 
 p{
@@ -109,6 +109,7 @@ p{
 
 .nav .nav-menu{    
     justify-content: space-between;
+    color: var(--text-gray);
 }
 
 .nav .toggle-collapse{
@@ -281,11 +282,12 @@ main .site-content .post-content > .post-image, .post-title{
 
 main .site-content .post-content > .post-image .post-info{
     background: var(--sky);
-    padding: 1rem;
+    padding: .5rem;
     position: absolute;
     bottom: 0%;
-    left: 20vw;
+    left: 13vw;
     border-radius: 3rem;
+    color: #ffff;
 }
 
 main .site-content .post-content > .post-image > div{
