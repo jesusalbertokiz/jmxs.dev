@@ -14,4 +14,4 @@ module.exports = function(eleventyconfig){
             output:"public"
         }
     }
-}
+};
