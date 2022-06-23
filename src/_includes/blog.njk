@@ -1,26 +1,20 @@
-              
-
-                 <div class="post-content">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/Blog-post/blog1.png" class="img" alt="blog1">                       
-                                <div class="post-inf flex-row">
-                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>    
+{%-for post in collections.post-%}
+                        <div class="post-content">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/Blog-post/blog1.png" class="img" alt="blog1">                       
+                                    <div class="post-inf flex-row">
+                                        <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;{{post.data.author}}</span>
+                                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
+                                    </div>
+                                </div>    
+                            
+                            </div>
+                            <div class="post-title">
+                                <a href="#">{{post.data.titulo}}</a>
+                                <p>{{post.data.description}}</p>
+                                <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            </div>
                         </div>
-                        <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
                     
-                    <hr>
+                    {%- endfor -%}

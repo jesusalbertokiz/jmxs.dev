@@ -6,6 +6,7 @@ module.exports = function(eleventyconfig){
     eleventyconfig.addPassthroughCopy('./src/assets')
     eleventyconfig.addPassthroughCopy('./src/js')
     eleventyconfig.addPassthroughCopy('./src/webfonts')
+    eleventyconfig.addPassthroughCopy('./src/articules')
 
 
     return{

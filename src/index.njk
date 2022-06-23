@@ -3,15 +3,14 @@ title: 'hola'
 layout: 'base.njk'
 ---
 
-<section class="container">
-    {% include 'carousel.njk' %}
-</section>
-
-<section class="container">
-    <div class="site-content">
+        <section class="container">
+            <div class="site-content">
                 
-        <div class="posts">            
-            {% include 'blog.njk' %}                          
+                <div class="posts">
+
+                    {%include "blog.njk"%}
+                    
+
                     <div class="pagination flex-row">
                         <a href="#"><i class="fas fa-chevron-left"></i></a>
                         <a href="#" class="pages">1</a>
@@ -19,9 +18,7 @@ layout: 'base.njk'
                         <a href="#" class="pages">3</a>
                         <a href="#"><i class="fas fa-chevron-right"></i></a>
                     </div>
-                </div>        
-            {% include 'asaide.njk' %}
-        </div>
 
-    </div>
-</section>
+                </div>
+                {% include 'asaide.njk'%}
+        </section>
