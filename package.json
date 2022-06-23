@@ -1,0 +1,23 @@
+{
+  "name": "blog.jmxs.dev",
+  "version": "1.0.0",
+  "description": "Personal blog where I will publish interesting things about software development and projects that I do.",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusalbertokiz/jmxs.dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesusalbertokiz/jmxs.dev/issues"
+  },
+  "homepage": "https://github.com/jesusalbertokiz/jmxs.dev#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
