@@ -16,7 +16,6 @@ html{
 }
 
 
-
 :root{
 
     /*      Theme colors        */
@@ -78,7 +77,7 @@ span{
 }
 
 .container{
-    margin: 0 5vw;
+    margin: 0 7 vw;
 }
 
 .text-gray{
@@ -100,7 +99,7 @@ p{
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 6vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
