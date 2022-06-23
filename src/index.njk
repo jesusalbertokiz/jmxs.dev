@@ -9,17 +9,19 @@ layout: 'base.njk'
 
 <section class="container">
     <div class="site-content">
-        {% include 'blog.njk' %}
-        
-         <div class="pagination flex-row">
-            <a href="#"><i class="fas fa-chevron-left"></i></a>
-            <a href="#" class="pages">1</a>
-            <a href="#" class="pages">2</a>
-            <a href="#" class="pages">3</a>
-            <a href="#"><i class="fas fa-chevron-right"></i></a>
+                
+        <div class="posts">            
+            {% include 'blog.njk' %}                          
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>        
+            {% include 'asaide.njk' %}
         </div>
-        
-        {% include 'asaide.njk' %}
 
     </div>
 </section>
