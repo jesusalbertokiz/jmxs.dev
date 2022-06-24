@@ -4,7 +4,7 @@ titulo: "Mi primer blog personal desarrollado con Jamstack"
 description: "En esta ocasión creé mi primer blog personal con el stack JAMstack. Se trata de un sitio donde tocare distintos temas relacionados a la tecnología y podra estar visible para cualquier persona que le interesaria conocer un poco mas del mundo del desarrollo de software."
 tags: "post"
 category: "Frontend"
-user: "2022-06-24"
+date: "2022-06-24"
 image: "https://i.imgur.com/hyvH4hk.png"
 
 ---
