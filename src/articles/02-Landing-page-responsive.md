@@ -3,9 +3,9 @@ author: "Jesus Mora"
 titulo: "Aprendiendo CSS grid con landing page de restaurante"
 description: "CSS es la tecnología que nos permite tener una web con diseños asombrosos sin importar el dispositivo que sea. Es por eso que es importante que cualquier desarrollador frontend sepa como utilizar."
 tags: "post"
-category: ["Frontend","CSS", "Responsive Desing"]
+category: ["CSS"]
 user: "2022-06-24"
-image: "https://i.imgur.com/ZwfxnAX.png"
+image: "https://i.imgur.com/NmCQqx2.png"
 ---
 
 

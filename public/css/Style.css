@@ -1,5 +1,3 @@
-@import url('./responsive.css');
-
 *{
     margin: 0;
     padding: 0;
@@ -7,17 +5,14 @@
 }
 
 html{
-    margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-size: 65.72%;
+    font-size: 62.75%;
     font-family: 'Abel', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-
 :root{
-
     /*      Theme colors        */
     --text-gray: #3f4954;
     --text-light : #686666da;
@@ -32,7 +27,6 @@ html{
     --Abel: 'Abel', sans-serif;
     --Anton: 'Anton', sans-serif;
 }
-
 
 /* ---------------- Global Classes ---------------*/
 
@@ -97,14 +91,15 @@ p{
 
 .nav{
     background: white;
-    padding: 0 2rem;
+    padding: 0 1rem;
     height: 0rem;
-    min-height: 6vh;
+    min-height: 7.2vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu{    
+    flex-direction: column;
     justify-content: space-between;
     color: var(--text-gray);
 }
@@ -114,7 +109,7 @@ p{
     top: 0%;
     width: 90%;
     cursor: pointer;
-    display: none;
+    display: initial;
 }
 
 .nav .toggle-collapse .toggle-icons{
@@ -134,15 +129,15 @@ p{
 
 .nav .nav-items{
     display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
 .nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    padding: .99rem 1rem;
     position: relative;
     font-family: var(--Abel);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .nav .nav-items .nav-link:hover{
@@ -154,15 +149,18 @@ p{
 }
 
 .nav .nav-brand a{
-    font-size: 1.6rem;
-    padding: 1rem 0;
+    padding: 1rem;
     display: block;
     font-family: var(--Anton);
     font-size: 1.6rem;
 }
 
 .nav .social{
-    padding: 1.4rem 0
+    padding: 1.4rem 0 0 .85rem;
+}
+
+.nav .social a{
+    font-size: 1.5rem;
 }
 
 .nav .social i{
@@ -182,7 +180,7 @@ p{
 main .site-title{
     background: black;
     background-size: cover;
-    height: 80vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +204,7 @@ main .site-title .title-gradient{
 
 .title-gradient span{
     font-family: var(--Anton);
-    font-size: 6rem;
+    font-size: 3rem;
     letter-spacing: 7px;
     font-weight: 600;
     display: block;
@@ -221,7 +219,7 @@ main .site-title .title-gradient{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #fff;
-    font-size: 6rem;
+    font-size: 3rem;
     position: absolute;
     inset: 0;
     content: var(--content);
@@ -274,8 +272,10 @@ main .site-title .title-gradient{
   }
 
 main .site-title .btn{
-    margin: 1.8rem;
+    margin: 1.4rem;
     background: var(--sky);
+    position: relative;
+    bottom: 60px;
 }
 
 main .site-title .btn:hover{
@@ -340,7 +340,7 @@ main .blog-content span{
 
 main .site-content{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 100%;
 }
 
 main .post-content{
@@ -580,7 +580,34 @@ footer.footer .move-up span:hover{
 
 /*              Viewport less then or equal to 1130px            */
 
-@media only screen and (max-width: 1130px){
+@media only screen and (max-width: 6000px) and (min-width: 1130px){
+    
+    .title-gradient span, .title-gradient span::before{
+        font-size: 7vh;    
+    }
+
+    main .site-title .btn {
+        bottom: 20px;
+    }
+
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: row;
+    }
+    
+    .nav .toggle-collapse{
+        display: none;
+
+    }
+
+    .nav .nav-items .nav-link {
+        padding: 1.5rem 1rem;
+        font-size: 1.8rem;
+    }
+
+    main .site-content{
+        grid-template-columns: 70% 30%;
+    }
+    
     .site-content .post-content > .post-image .post-info{
         left: 2rem;
         bottom: 1.2rem;
@@ -599,69 +626,29 @@ footer.footer .move-up span:hover{
 
 /*      x       Viewport less then or equal to 1130px    x     */
 
-
 /*              Viewport less then or equal to 750px            */
 
-@media only screen and (max-width: 750px){
+@media screen and (max-width: 1130px) and (min-width: 600px){
+    
+    .title-gradient span, .title-gradient span::before{
+        font-size: 7vh;    
+    }
+
+    main .site-title .btn {
+        bottom: 40px;
+    }
+    
     .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
+        flex-direction: row;
     }
-
+    
     .nav .toggle-collapse{
-        display: initial;
-    }
-
-    main .site-content{
-        grid-template-columns: 100%;
-    }
-
-    footer.footer .container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
-
-/*        x      Viewport less then or equal to 750px       x     */
-
-
-/*              Viewport less then or equal to 520px            */
-
-@media only screen and (max-width: 520px){
-    main .blog{
-        height: 125vh;
-    }
-
-    .site-content .post-content > .post-image .post-info{
         display: none;
-    }
 
-    footer.footer .container > div{
-        padding:  1rem .9rem;
-    }
-
-    footer .rights{
-        padding: 0 1.4rem;
-        text-align: center;
-    }
-
-
-}
-
-/*        x      Viewport less then or equal to 520px       x     */
-/*              Viewport less then or equal to 750px            */
-
-@media only screen and (max-width: 750px){
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
-    }
-
-    .nav .toggle-collapse{
-        display: initial;
     }
 
     main .site-content{
-        grid-template-columns: 100%;
+        grid-template-columns: 70% 30%;
     }
 
     footer.footer .container{
@@ -676,35 +663,24 @@ footer.footer .move-up span:hover{
 
 /*              Viewport less then or equal to 520px            */
 
-@media only screen and (max-width: 520px){
+@media screen and (max-width: 600px) and (min-width: 400px)  { 
 
     .title-gradient span, .title-gradient span::before{
-        font-size: 3rem;
+        font-size: 6.5vh;    
     }
 
-    main .blog{
-        height: 75vh;
+    main .site-title .btn {
+        bottom: 40px;
     }
 
-    main .blog .blog-post {
-        padding-top: 4.5rem;
+    /**/
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
     }
 
-    .site-content .post-content > .post-image .post-info{
-        display: none;
-    }
 
-    .site-content .sidebar .popular-post h2 {
-        padding-top: 2.5rem;
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    footer.footer .container > div{
-        padding:  1rem .9rem;
-    }
-
-    footer .rights{
-        padding: 0 1.4rem;
-        text-align: center;
-    }
-
+    
 }
