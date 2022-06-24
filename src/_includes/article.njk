@@ -4,9 +4,15 @@ layout: 'base-blog.njk'
 <section class="container">
     <div class="site-content">
         <div class="posts">
-            <h2>{{titulo}}</h2>
-            <img src="{{image}}">                    
+            
+            <img class="img-principal" src="{{image}}">
+            <h2 class="title">{{titulo}}</h2>                    
             {{ content | safe }}
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
         {% include 'asaide.njk'%}
     </div>
