@@ -14,7 +14,7 @@ module.exports = function(eleventyconfig){
     return{
         dir:{
             input:"src",
-            output:"public"
+            output:"docs"
         }
     }
 };
