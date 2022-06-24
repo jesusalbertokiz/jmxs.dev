@@ -6,8 +6,10 @@ module.exports = function(eleventyconfig){
     eleventyconfig.addPassthroughCopy('./src/assets')
     eleventyconfig.addPassthroughCopy('./src/js')
     eleventyconfig.addPassthroughCopy('./src/webfonts')
-    eleventyconfig.addPassthroughCopy('./src/articules')
 
+    eleventyconfig.addPassthroughCopy("postDate", (dateObj) => {
+        return DateTime.fromJSDate.toLocaleString(DataTime.DATE_MED)
+    })
 
     return{
         dir:{
