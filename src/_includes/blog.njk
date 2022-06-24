@@ -1,0 +1,20 @@
+{%-for post in collections.post-%}
+        <div class="post-content">
+            <div class="post-image">
+                <div>
+                    <img src="{{post.data.image}}" class="img" alt="blog1">                       
+                    <div class="post-inf flex-row">
+                        <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;{{post.data.author}}</span>
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
+                    </div>
+                </div>    
+                            
+            </div>
+            <div class="post-title">
+                <a href="{{post.url}}">{{post.data.titulo}}</a>
+                <p>{{post.data.description}}</p>
+                <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <hr>
+{%- endfor -%}
