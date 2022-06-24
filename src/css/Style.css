@@ -476,11 +476,14 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter .form-element{
-    padding: .5rem 2rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .site-content .sidebar .newsletter .input-element{
-    width: 80%;
+    width: 20rem;
     height: 1.9rem;
     padding: .3rem .5rem;
     font-family: var(--Abel);
@@ -489,7 +492,7 @@ main .post-content .post-title a{
 
 .site-content .sidebar .newsletter .form-btn{
     border-radius: 0;
-    padding: .8rem 32%;
+    width: 20rem;
     margin: 1rem 0;
     background: var(--sky);
 }
