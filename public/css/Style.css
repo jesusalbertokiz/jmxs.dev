@@ -95,7 +95,7 @@ p{
     background: white;
     padding: 0 1rem;
     height: 0rem;
-    min-height: 7.2vh;
+    min-height: 4.2rem;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -136,7 +136,7 @@ p{
 }
 
 .nav .nav-items .nav-link{
-    padding: .99rem 1rem;
+    padding: 1.3rem 1rem;
     position: relative;
     font-family: var(--Abel);
     font-size: 1.5rem;
@@ -277,7 +277,7 @@ main .site-title .btn{
     margin: 1.4rem;
     background: var(--sky);
     position: relative;
-    bottom: 60px;
+    bottom: 70px;
 }
 
 main .site-title .btn:hover{
@@ -588,8 +588,16 @@ footer.footer .move-up span:hover{
 
 /*              Viewport less then or equal to 1130px            */
 
-@media only screen and (max-width: 6000px) and (min-width: 1130px){
+@media only screen and (max-width: 6000px) and (min-width: 900px){
     
+    p {
+        font-size: 2rem;
+    }
+    
+    span {
+        font-size: 1.7rem;
+    }
+
     .title-gradient span, .title-gradient span::before{
         font-size: 7vh;    
     }
@@ -608,14 +616,38 @@ footer.footer .move-up span:hover{
     }
 
     .nav .nav-items .nav-link {
-        padding: 1.5rem 1rem;
+        padding: 1rem 1rem;
         font-size: 1.8rem;
     }
 
     main .site-content{
         grid-template-columns: 70% 30%;
     }
+
+    main .post-content {
+        margin: 2rem 0;
+    }
     
+    .site-content .post-content .post-title .post-btn {
+        padding: 1.2rem 3rem;
+    }
+
+    button.btn {
+        font-size: 1.5rem;
+    }
+
+    main .site-content .post-content > .post-image .post-inf {
+        bottom: -5%;
+    }
+
+    main .post-content .post-title a {
+        font-size: 2.5rem;
+    }
+    main .site-content .post-content > .post-image .img {
+        height: 400px;
+        object-fit: cover;
+    }
+
     .site-content .post-content > .post-image .post-info{
         left: 2rem;
         bottom: 1.2rem;
@@ -636,7 +668,7 @@ footer.footer .move-up span:hover{
 
 /*              Viewport less then or equal to 750px            */
 
-@media screen and (max-width: 1130px) and (min-width: 600px){
+@media screen and (max-width: 980px) and (min-width: 600px){
     
     .title-gradient span, .title-gradient span::before{
         font-size: 7vh;    
@@ -653,6 +685,18 @@ footer.footer .move-up span:hover{
     .nav .toggle-collapse{
         display: none;
 
+    }
+
+    main .post-content {
+        max-width: 700px;
+    }
+
+    main .site-content .post-content > .post-image .post-inf {
+        bottom: -3%;
+    }
+
+    main .site-content .post-content > .post-title {
+        padding: 3rem;
     }
 
     main .site-content{
@@ -678,14 +722,16 @@ footer.footer .move-up span:hover{
     }
 
     main .site-title .btn {
-        bottom: 40px;
+        bottom: 60px;
     }
-
-    /**/
+    
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
 
+    main .site-content .post-content > .post-image .post-inf {
+        bottom: -4%;
+    }
 
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
