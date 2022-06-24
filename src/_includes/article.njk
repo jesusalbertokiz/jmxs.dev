@@ -1,6 +1,16 @@
 ---
-layout: 'base.njk'
+layout: 'base-blog.njk'
 ---
-<div>
-{{ content | safe }}
-</div>
+<section class="container">
+            <div class="site-content">
+                
+                
+
+                <div class="posts">
+                    <h2>{{titulo}}</h2>
+                    <img src="{{image}}">                    
+                    {{ content | safe }}
+
+                </div>
+                {% include 'asaide.njk'%}
+        </section>
